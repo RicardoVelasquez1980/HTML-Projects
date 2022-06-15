@@ -7,26 +7,68 @@
 
         </title>
 
+        <!-- Internal Styling -->
+        <!-- The Border Is Used As A Helpful Visual -->
+        <!-- Padding Is Spacing Within Border -->
+        <!-- Margin Is Spacing Outside Border -->
+        <style>
+            body {background-color: powderblue;}
+            h1  {color: olive;}
+            p {
+                border: 2px dashed olive;
+                padding: 20px;
+                margin: 30;
+
+            }
+
+        </style>
+
     </head>
 
     <body>
-        <h1>Inline</h1>
+        <!-- Inline Styling -->
+        <h1 style = "color: green;">Inline</h1>
 
-        <p>This is what you have been doing so far to implement CSS.
+        <p>
+            This is what you have been doing so far to implement CSS.
             <br>
 
             It is the <q>style = </q> attribute.
+            <br>
+
+            It is usually used to apply a unique styling to an HTMl element.
+
         </p>
 
         <hr>
 
         <h1>Internal</h1>
 
+        <p>
+            This is where you decide the styling within the HTML but rather than adding it in each element you
+            <br>
+
+            write it in the <q>head</q> element. 
+            <br>
+
+            This styling will apply for <b>ALL</b> HTML elements unless you overwrite them using the <i>inline</i> method.
+
+        </p>
+
         <hr>
 
         <h1>External</h1>
 
+        <p>
+            This involves a seperate <q>style.css</q> file which decides the styling for the entire site.
+            <br>
 
+            This file is called within the HTML <q>head</q> element as follows:
+            <br>
+
+            <q>< link rel = "stylesheet" href = "style.css" ></q>
+
+        </p>
 
     </body>
 
