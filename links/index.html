@@ -11,6 +11,99 @@
 
     <body>
         <a href = "https://www.w3schools.com/html/html_links.asp">This is a basic link </a>
+
+        <!-- "Target" Attribute Decides How The Link Is Opened -->
+        <!-- By Default It Opens In The Same Tab AKA "_self" -->
+        <h1>Targets</h1>
+
+        <a href = "https://www.w3schools.com/html/html_links.asp" target = "_self">Self target links open in the same tab/window</a>
+        <br>
+
+        <a href = "https://www.w3schools.com/html/html_links.asp" target = "_blank">Blank target links open in a new tab/window</a>
+        <br>
+
+        <a href = "https://www.w3schools.com/html/html_links.asp" target = "_parent">Parent target links open in the parent frame</a>
+        <br>
+
+        <a href = "https://www.w3schools.com/html/html_links.asp" target = "_top">Parent target links open in the full body window</a>
+
+        <h1>Other</h1>
+
+        <!-- So Far These Links Are Considered Absolute Links Bc They Are From Some Other Site -->
+        <!-- A Link Can Also Be A Relative Link Which Means It Links To Something Locally Examples Below -->
+        <!-- <a href = "html_images.asp">HTML Images</a> -->
+        <!-- <a href = "/css/default.asp">CSS Tutorial</a> -->
+
+        <a href = "https://www.w3schools.com/html/html_links.asp" target = "_blank">
+            <!-- New Way Of Defining The Width And Height Of An Image -->
+            <img src="https://www.w3schools.com/html/smiley.gif" alt="This Image is a link" style = "width: 42px; height: 42px">
+
+        </a>
+        <br>
+
+        <a href = "mailto: ricardovelasquez681@gmail.com">
+            This opens the users email program to let them send a new email
+            <br>
+
+            The email the message will be sent to is also specified.
+
+        </a>
+
+        <!-- TIP: Adding A Tooltip AKA "title" Can Be Useful -->
+
+        <h1>Colors</h1>
+        
+        <p>
+            By Default when a link isnt clicked, aka unvisited, it is blue and underlined.
+            <br>
+
+            When it is clicked, aka visited, it is purple and underlined.
+            <br>
+
+            And when its currently being clicked, aka active, it is red and underlined.
+            <br>
+
+            However, these can be changed, and you can make spectacular things with it such as buttons.
+
+        </p>
+        <br>
+
+        <a href = "link.html">Link Color Change Example</a>
+        <br>
+
+        <a href="button.html">Link Button Example</a>
+
+        <h1>Bookmarks</h1>
+        
+        <p>
+            <!-- "href" Is Linking To An "id" Which Is Made Further Down -->
+            <!-- Calling/Linking To An "id" Like This Is Called A Bookmak And A "#" Must Always Be Before The "id" Name -->
+            <!-- In Order To Link To An "id" On Another Page First Indicate The File Location Followed By The "id" Name -->
+            <!-- EX: "<a href = "example.index#idName">Bookmark On Another Page</a>"-->
+            This <a href = "#BLoc">bookmark</a> will take you to a location on the site farther down.
+            <br>
+
+            Bookmarks are useful for long webpages.
+
+        </p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1 id = "BLoc">Bookmark Location</h1>
+
     </body>
 
 </html>
