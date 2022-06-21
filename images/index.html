@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Images
+
+        </title>
+        
+        <!-- "background-size: cover" Makes The Image Cover The Entire Element -->
+        <!-- If Followed By "background-attachment: fixed" Then It Will Cover The Entire Element But The Image Keeps The Same Proportions -->
+        <!-- If Also Followed By "background=size: 100% 100%" Then The Image Will Fit The Element Althought Stretched -->
+       <style>
+            body {
+                background-image: url("IMG.jpg");
+                background-size: cover;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+
+            }
+
+            h1, p, pre {
+                background-color: black;
+                color: white;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <!-- This Is How A Normal Image Is Made -->
+        <!-- Adding The "alt" Is Helpful For Those Using A Screen Reader -->
+        <img src = "IMG.jpg" alt = "Image Of Me">
+
+        <!-- Ways To Specify The Width And Height Of An Image -->
+        <!-- Always Specify -->
+        <!-- TIP: Using The Style Method Is Prefered Since This Will Overide What Is In A Styling Sheet -->
+        <img src = "IMG.jpg" alt = "Resize Without Styling" width = "200" height = "225">
+        <img src = "IMG.jpg" alt = "Resize Using Styling" style = "width: 100px; height: 75px;">
+        <br>
+
+        <!-- This Image Is On Another Website -->
+        <img src = "https://www.w3schools.com/images/w3schools_green.jpg" alt = "W3Schools Green Image" style = "width: 200; height: 200">
+        <br>
+
+        <!-- Images Can Also Be A Gif -->
+
+        <p>
+            <img src = "IMG.jpg" alt = "Image Of Me" style = "width: 200px; height: 225px">
+            The images doesnt float.
+            <img src="IMG.jpg" alt="Image Of Me" style="width: 200px; height: 225px">
+
+        </p>
+        <br>
+        <br>
+
+        <p>
+            <img src = "IMG.jpg" alt = "Image Of Me" style = "float: right; width: 200px; height: 200px">
+            The images float to the left/right of the text.
+
+            <img src = "IMG.jpg" alt = "Image Of Me" style = "float: left; width: 200px; height: 200px">
+
+        </p>
+
+        <h1>Image Maps</h1>
+
+        <p>
+            Image Maps allow you to click on certian parts of an image which will direct you to a new link.
+            <br>
+            The chin, left(your left) ear, and nose are examples of this.
+            <br>
+
+            <!-- In Order To Use An Image Map You Must Assign One To The Image -->
+            <img src = "IMG.jpg" alt = "Me" usemap = "#faceMap" width = "300" height = "375">
+
+        </p>
+
+        <!-- Always Give A "map" A "name", This Will Be Used TO Reference The Map For An Image -->
+        <!-- Within Each Map You Will Have "area"s. These Are The Clickable Areas of An Image -->
+        <!-- An "area" Has A Specified "shape" Followed By "coords". It Also Has "alt" And Of Course The href" -->
+        <!-- Click Tab Until You See The Outline Of These Areas, If You Want A Visual -->
+        <map name = "faceMap">
+            <!-- A Circles "coords" Are The XY Then Radius. The XY Coords Are The Middle Of The Circle -->
+            <area shape = "circle" coords = "150, 300, 25" alt = "Chin" href = "https://www.google.com/search?q=chin&rlz=1C1UEAD_enUS1009US1009&sxsrf=ALiCzsaCX0YSaKJsu4ko9Jw9FDhqvvYaxA%3A1655778467739&ei=oyyxYsOtLOfUkPIPu7m7uAo&ved=0ahUKEwiDi5W7v734AhVnKkQIHbvcDqcQ4dUDCA8&uact=5&oq=chin&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyCgguELEDENQCEEMyCAgAEIAEEMkDMgUIABCSAzIFCAAQkgMyCwgAEIAEELEDEIMBMgUIABCABDILCC4QgAQQxwEQrwEyBQgAEIAEMgsIABCABBCxAxCDAToHCAAQRxCwAzoHCAAQsAMQQzoKCAAQ5AIQsAMYAToMCC4QyAMQsAMQQxgCOg8ILhDUAhDIAxCwAxBDGAJKBAhBGABKBAhGGAFQzQlYzQlg0RBoAXABeACAAWqIAWqSAQMwLjGYAQCgAQHIARPAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz" target = "_blank">
+            <!-- A Rect "coords"  Are XY For Top Left Corner Followed By XY For Bottom Right Corner -->
+            <area shape = "rect" coords = "50, 175, 65, 230" alt = "Ear" href = "https://www.google.com/search?q=ear&rlz=1C1UEAD_enUS1009US1009&oq=ear&aqs=chrome..69i57j0i433i512l2j46i131i433i512j0i512j46i512j46i131i199i433i465i512j46i433i512j0i131i433i512j0i512.729j0j7&sourceid=chrome&ie=UTF-8" target = "_blank">
+            <!-- A Poly "coords" Are XY For Every Edge You Want To Make -->
+            <!-- Think Of How You Trace Using The Pen Tool In Illustrator -->
+            <area shape = "poly" coords = "120, 210, 180, 210, 150, 145" alt = "Nose" href = "https://www.google.com/search?q=nose&rlz=1C1UEAD_enUS1009US1009&oq=nose&aqs=chrome..69i57j0i67j0i67i457j0i131i433i512j0i67l2j0i131i433i512j0i67j0i512j0i131i433.2156j0j7&sourceid=chrome&ie=UTF-8" target = "_blank">
+
+        </map>
+
+        <h1>
+            Background Images
+
+        </h1>
+
+        <p>
+            I have added a background image to the entire <i>body</i>.
+            <br>
+
+            A background image will continue to repeat itself until its covers the entire elements, clearly you can prevent this with the following in the <i>style</i> element:
+            <br>
+
+            <i>background-repeat: no-repeat</i>
+
+        </p>
+
+        <h1>Picture Element</h1>
+
+        <p>
+            The <i>picture</i> element allows you to display multiple images depending on the screen size.
+            <br>
+
+            Resize the page and refresh to see what I mean.
+            <br>
+
+            Not going to lie, as of the day I made this, I am confused on the <i>picture</i> element.
+
+        </p>
+
+        <pre>
+            When to use the Picture Element
+            There are two main purposes for the <picture> element:
+            
+                1. Bandwidth
+                If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first
+                <source> element with matching attribute values, and ignore any of the following elements.
+            
+                2. Format Support
+                Some browsers or devices may not support all image formats. By using the <picture> element, you can add images of
+                    all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.
+
+        </pre>
+
+        <picture>
+            <source media = "(min-width: 800px)" srcset = "IMG.jpg">
+            <source media = "(min-width: 650px)" srcset="https://www.w3schools.com/html/picture_example.jpg">
+            <source media = "(min-width: 465px)" srcset="https://www.w3schools.com/images/mypagelogo32x32.png">
+
+            <img src = "IMG.jpg" alt = "Me">
+
+        </picture>
+
+    </body>
+
+</html>
