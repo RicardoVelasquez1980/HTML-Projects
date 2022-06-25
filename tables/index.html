@@ -503,6 +503,516 @@
         
         </table>
 
+        <h1>Padding & Spacing</h1>
+
+        <!-- Padding Is The Space Between The Cell Edges And The Cell Data -->
+        <!-- It Is 0 By Default -->
+        <table style="border: 2px solid black; border-collapse: collapse">
+            <tr>
+                <th style="border: 2px solid black; padding: 15px">Dairy</th>
+                <th style="border: 2px solid black; padding: 15px">Meat</th>
+                <th style="border: 2px solid black; padding: 15px">Fruit</th>
+                <th style="border: 2px solid black; padding: 15px">Vegetable</th>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black; padding: 15px">milk</td>
+                <td style="border: 2px solid black; padding: 15px">beef</td>
+                <td style="border: 2px solid black; padding: 15px">mango</td>
+                <td style="border: 2px solid black; padding: 15px">carrot</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black; padding: 15px">cheese</td>
+                <td style="border: 2px solid black; padding: 15px">chicken</td>
+                <td style="border: 2px solid black; padding: 15px">apple</td>
+                <td style="border: 2px solid black; padding: 15px">onion</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black; padding: 15px">yogurt</td>
+                <td style="border: 2px solid black; padding: 15px">pork</td>
+                <td style="border: 2px solid black; padding: 15px"></td>
+                <td style="border: 2px solid black; padding: 15px">lettuce</td>
+        
+            </tr>
+        
+        </table>
+        <br>
+
+        <!-- You Can Also Specify On Which Side You Want The Padding In -->
+        <table style="border: 2px solid black; border-collapse: collapse">
+            <tr>
+                <th style="border: 2px solid black; padding-left: 10px">Dairy</th>
+                <th style="border: 2px solid black; padding-right: 5px">Meat</th>
+                <th style="border: 2px solid black; padding-top: 15px">Fruit</th>
+                <th style="border: 2px solid black; padding-bottom: 20px">Vegetable</th>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black; padding-left: 10px">milk</td>
+                <td style="border: 2px solid black; padding-right: 5px">beef</td>
+                <td style="border: 2px solid black; padding-top: 15px">mango</td>
+                <td style="border: 2px solid black; padding-bottom: 20px">carrot</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black; padding-left: 10px">cheese</td>
+                <td style="border: 2px solid black; padding-right: 5px">chicken</td>
+                <td style="border: 2px solid black; padding-top: 15px">apple</td>
+                <td style="border: 2px solid black; padding-bottom: 20px">onion</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black; padding-left: 10px">yogurt</td>
+                <td style="border: 2px solid black; padding-right: 5px">pork</td>
+                <td style="border: 2px solid black; padding-top: 15px"></td>
+                <td style="border: 2px solid black; padding-bottom: 20px">lettuce</td>
+        
+            </tr>
+        
+        </table>
+        <br>
+
+        <!-- Spacing Is The Space Between Each Cell -->
+        <!-- It Is 2px By Default -->
+        <!-- "border-collapse" Must Be On "seperate" For Spacing To Work -->
+        <table style="border: 2px solid black; border-spacing: 10px">
+            <tr>
+                <th style="border: 2px solid black">Dairy</th>
+                <th style="border: 2px solid black">Meat</th>
+                <th style="border: 2px solid black">Fruit</th>
+                <th style="border: 2px solid black">Vegetable</th>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">milk</td>
+                <td style="border: 2px solid black">beef</td>
+                <td style="border: 2px solid black">mango</td>
+                <td style="border: 2px solid black">carrot</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">cheese</td>
+                <td style="border: 2px solid black">chicken</td>
+                <td style="border: 2px solid black">apple</td>
+                <td style="border: 2px solid black">onion</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">yogurt</td>
+                <td style="border: 2px solid black">pork</td>
+                <td style="border: 2px solid black"></td>
+                <td style="border: 2px solid black">lettuce</td>
+        
+            </tr>
+        
+        </table>
+
+        <h1>Colspan & Rowspan</h1>
+
+        <!-- Colspan Allows Cells To Span Across Multiple Columns -->
+        <!-- This Can Be Used For Both Table Heaeders And Table Data -->
+        <table style="border: 2px solid black; border-collapse: collapse">
+            <tr>
+                <th style="border: 2px solid black" colspan = "2">Dairy & Meat</th>
+                <th style="border: 2px solid black">Fruit</th>
+                <th style="border: 2px solid black">Vegetable</th>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black" >milk</td>
+                <td style="border: 2px solid black">beef</td>
+                <td style="border: 2px solid black">mango</td>
+                <td style="border: 2px solid black">carrot</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">cheese</td>
+                <td style="border: 2px solid black">chicken</td>
+                <td style="border: 2px solid black">apple</td>
+                <td style="border: 2px solid black">onion</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">yogurt</td>
+                <td style="border: 2px solid black">pork</td>
+                <td style="border: 2px solid black"></td>
+                <td style="border: 2px solid black">lettuce</td>
+        
+            </tr>
+        
+        </table>
+        <br>
+
+        <!-- Rowspan Allows Cells To Span Across Multiple Rows -->
+        <!-- This Can Be Used For Both Table Heaeders And Table Data -->
+        <table style="border: 2px solid black; border-collapse: collapse">
+            <tr>
+                <th style="border: 2px solid black">Dairy</th>
+                <th style="border: 2px solid black">Meat</th>
+                <th style="border: 2px solid black">Fruit</th>
+                <th style="border: 2px solid black">Vegetable</th>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">milk</td>
+                <td style="border: 2px solid black">beef</td>
+                <td style="border: 2px solid black">mango</td>
+                <td style="border: 2px solid black">carrot</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">cheese</td>
+                <td style="border: 2px solid black">chicken</td>
+                <td style="border: 2px solid black" rowspan = "2">apple</td>
+                <td style="border: 2px solid black">onion</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">yogurt</td>
+                <td style="border: 2px solid black">pork</td>
+                <td style="border: 2px solid black">lettuce</td>
+        
+            </tr>
+        
+        </table>
+
+        <h1>Styling</h1>
+
+        <!-- You Can Easily Make Every Other Row Be Have A Background Color -->
+        <!-- In A Styling Sheet Or In The Style Element In Header Do The Following -->
+        <!--
+            tr:nth-child(even){
+                background-color: rgb(0, 0, 255);
+            }
+        -->
+        <!-- This Will Add A Blue Background To All Even Table Rows, Just Switch "even" To "odd" For ALl Odd Table Rows -->
+        <!-- A Similar Thing Can Be Done But For Columns Instead Of Rows, Do As Follows -->
+        <!--
+            td:nth-child(even), th:nth-child(even){
+                background-color: rgb(0, 0, 255);
+            }
+        -->
+        <!-- This Will Add A Blue Background To ALl Even Columns, Just witch "even" To "Odd" For All Odd Columns -->
+        <!-- Now If You Want Something Like The Table Then Do Both Of What Was Written Above And Of Course Just Change It To Odd If Needed -->
+        <table style="border: 2px solid black; border-collapse: collapse">
+            <tr style = "background-color: aquamarine;">
+                <th style="border: 2px solid black">Dairy</th>
+                <th style="border: 2px solid black; background-color: aquamarine">Meat</th>
+                <th style="border: 2px solid black">Fruit</th>
+                <th style="border: 2px solid black; background-color: aquamarine">Vegetable</th>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">milk</td>
+                <td style="border: 2px solid black; background-color: aquamarine">beef</td>
+                <td style="border: 2px solid black">mango</td>
+                <td style="border: 2px solid black; background-color: aquamarine">carrot</td>
+        
+            </tr>
+        
+            <tr style = "background-color: aquamarine;">
+                <td style="border: 2px solid black">cheese</td>
+                <td style="border: 2px solid black; background-color: aquamarine">chicken</td>
+                <td style="border: 2px solid black">apple</td>
+                <td style="border: 2px solid black; background-color: aquamarine">onion</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">yogurt</td>
+                <td style="border: 2px solid black; background-color: aquamarine">pork</td>
+                <td style="border: 2px solid black"></td>
+                <td style="border: 2px solid black; background-color: aquamarine">lettuce</td>
+        
+            </tr>
+        
+        </table>
+        <br>
+
+        <!-- Just Create The Bottom Border For The Table Row For A Horizontal Divider Look -->
+        <table style = "border-collapse: collapse">
+            <tr style = "border-bottom: 2px solid black">
+                <th>Dairy</th>
+                <th>Meat</th>
+                <th>Fruit</th>
+                <th>Vegetable</th>
+        
+            </tr>
+        
+            <tr style = "border-bottom: 2px solid black">
+                <td>milk</td>
+                <td>beef</td>
+                <td>mango</td>
+                <td>carrot</td>
+        
+            </tr>
+        
+            <tr style = "border-bottom: 2px solid black">
+                <td>cheese</td>
+                <td>chicken</td>
+                <td>apple</td>
+                <td>onion</td>
+        
+            </tr>
+        
+            <tr style = "border-bottom: 2px solid black">
+                <td>yogurt</td>
+                <td>pork</td>
+                <td></td>
+                <td>lettuce</td>
+        
+            </tr>
+        
+        </table>
+        <br>
+
+        <!-- For Vertical Dividers I Recommend Left Border For Table And Right Border For Table Data-->
+        <table style="border-left: 2px solid black; border-collapse: collapse">
+            <tr>
+                <th style="border-right: 2px solid black">Dairy</th>
+                <th style="border-right: 2px solid black">Meat</th>
+                <th style="border-right: 2px solid black">Fruit</th>
+                <th style="border-right: 2px solid black">Vegetable</th>
+        
+            </tr>
+        
+            <tr>
+                <td style="border-right: 2px solid black">milk</td>
+                <td style="border-right: 2px solid black">beef</td>
+                <td style="border-right: 2px solid black">mango</td>
+                <td style="border-right: 2px solid black">carrot</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border-right: 2px solid black">cheese</td>
+                <td style="border-right: 2px solid black">chicken</td>
+                <td style="border-right: 2px solid black">apple</td>
+                <td style="border-right: 2px solid black">onion</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border-right: 2px solid black">yogurt</td>
+                <td style="border-right: 2px solid black">pork</td>
+                <td style="border-right: 2px solid black"></td>
+                <td style="border-right: 2px solid black">lettuce</td>
+        
+            </tr>
+        
+        </table>
+        <br>
+
+        <!-- Although The Example Below Isnt An Exampe Of This -->
+        <!-- You Can Make Rows Or Data Which The Mouse Hovers Over To Be Changed, Such AS Changing The Background -->
+        <!-- Do The Following In A Style Sheet Or In The Style Element In The Header -->
+        <!--
+            tr:hover{
+                background-color: rgb(0, 255, 0);
+            }
+        -->
+        <!-- In This Case The Background Of A Row Will Change To Green When The Mouse Hovers Over It -->
+        <table style="border: 2px solid black; border-collapse: collapse">
+            <tr>
+                <th style="border: 2px solid black">Dairy</th>
+                <th style="border: 2px solid black">Meat</th>
+                <th style="border: 2px solid black">Fruit</th>
+                <th style="border: 2px solid black">Vegetable</th>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">milk</td>
+                <td style="border: 2px solid black">beef</td>
+                <td style="border: 2px solid black">mango</td>
+                <td style="border: 2px solid black">carrot</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">cheese</td>
+                <td style="border: 2px solid black">chicken</td>
+                <td style="border: 2px solid black">apple</td>
+                <td style="border: 2px solid black">onion</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">yogurt</td>
+                <td style="border: 2px solid black">pork</td>
+                <td style="border: 2px solid black"></td>
+                <td style="border: 2px solid black">lettuce</td>
+        
+            </tr>
+        
+        </table>
+
+        <h1>Colgroup</h1>
+        <!-- Colgroups Allow You To Change Specific Columns In A Table -->
+        <!-- However, There Are Only A Few Properties That Can Be Changed -->
+        <!-- Width, Visibility, Background, Border -->
+
+        <!-- Two Changed Columns -->
+        <table style="border: 2px solid black; border-collapse: collapse">
+            <caption>Food</caption>
+
+            <!-- A Colgroup Must Be Within The Table Element -->
+            <!-- Above All Other Elements Such As "tr" -->
+            <!-- But Below The Caption Element -->
+            <colgroup>
+                <!-- The Col Specifies Which Columns Are To Be Changed And How -->
+                <!-- This Span Decides How Many Columns From The One It Is On -->
+                <!-- This Will Select The First Two Columns -->
+                <col span = "2" style = "background-color: aqua;">
+
+            </colgroup>
+
+            <tr>
+                <th style="border: 2px solid black">Dairy</th>
+                <th style="border: 2px solid black">Meat</th>
+                <th style="border: 2px solid black">Fruit</th>
+                <th style="border: 2px solid black">Vegetable</th>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">milk</td>
+                <td style="border: 2px solid black">beef</td>
+                <td style="border: 2px solid black">mango</td>
+                <td style="border: 2px solid black">carrot</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">cheese</td>
+                <td style="border: 2px solid black">chicken</td>
+                <td style="border: 2px solid black">apple</td>
+                <td style="border: 2px solid black">onion</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">yogurt</td>
+                <td style="border: 2px solid black">pork</td>
+                <td style="border: 2px solid black"></td>
+                <td style="border: 2px solid black">lettuce</td>
+        
+            </tr>
+        
+        </table>
+        <br>
+
+        <!-- Two Middle Columns Changed -->
+        <table style="border: 2px solid black; border-collapse: collapse">
+            <colgroup>
+                <!-- This Will Allow The First Two Columns To Be Skipped -->
+                <col span = "2">
+                <!-- The 3rd And 4th Column Are Changed -->
+                <col span = "2" style = "background-color: aqua">
+
+            </colgroup>
+
+            <tr>
+                <th style="border: 2px solid black">Dairy</th>
+                <th style="border: 2px solid black">Meat</th>
+                <th style="border: 2px solid black">Fruit</th>
+                <th style="border: 2px solid black">Vegetable</th>
+                <th style="border: 2px solid black">filler</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">milk</td>
+                <td style="border: 2px solid black">beef</td>
+                <td style="border: 2px solid black">mango</td>
+                <td style="border: 2px solid black">carrot</td>
+                <td style="border: 2px solid black">filler</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">cheese</td>
+                <td style="border: 2px solid black">chicken</td>
+                <td style="border: 2px solid black">apple</td>
+                <td style="border: 2px solid black">onion</td>
+                <td style="border: 2px solid black">filler</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">yogurt</td>
+                <td style="border: 2px solid black">pork</td>
+                <td style="border: 2px solid black"></td>
+                <td style="border: 2px solid black">lettuce</td>
+                <td style="border: 2px solid black">filler</td>
+        
+            </tr>
+        
+        </table>
+        <br>
+
+        <!-- Dairy Column Is Hidden -->
+        <!-- Meat Column Is Pink And Last Two Columns Are Changed -->
+        <table style="border: 2px solid black; border-collapse: collapse">
+            <colgroup>
+                <col style = "visibility: collapse;">
+                <col style = "background-color: pink">
+                <col span = "2" style = "background-color: aqua">
+                
+            </colgroup>
+
+            <tr>
+                <th style="border: 2px solid black">Dairy</th>
+                <th style="border: 2px solid black">Meat</th>
+                <th style="border: 2px solid black">Fruit</th>
+                <th style="border: 2px solid black">Vegetable</th>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">milk</td>
+                <td style="border: 2px solid black">beef</td>
+                <td style="border: 2px solid black">mango</td>
+                <td style="border: 2px solid black">carrot</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">cheese</td>
+                <td style="border: 2px solid black">chicken</td>
+                <td style="border: 2px solid black">apple</td>
+                <td style="border: 2px solid black">onion</td>
+        
+            </tr>
+        
+            <tr>
+                <td style="border: 2px solid black">yogurt</td>
+                <td style="border: 2px solid black">pork</td>
+                <td style="border: 2px solid black"></td>
+                <td style="border: 2px solid black">lettuce</td>
+        
+            </tr>
+        
+        </table>
+
     </body>
 
 </html>
