@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Lists</title>
+        <link rel = "icon" href = "favicon.ico">
+
+    </head>
+
+    <body>
+        <h1>Lists Basics</h1>
+        
+        <h2>Unordered List</h2>
+
+        <!-- Create An Unordered List Using "ul" -->
+        <!-- Unordered Lists Have Bullet Point Markers By Default -->
+        <ul>
+            <!-- "li" Is The List Item -->
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Refresher</li>
+
+        </ul>
+
+        <h2>Ordered List</h2>
+
+        <!-- Create An Ordered List Using "ol" -->
+        <!-- Ordered Lists Have Number Markers By Default -->
+        <ol>
+            <!-- Just Like An Unordered List "li" Is The List Item -->
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Refresher</li>
+
+        </ol>
+
+        <h2>Description List</h2>
+
+        <!-- Descriptive Lists Arent Bullet Pointed Or Numbered -->
+        <!-- It Is Just A The Term Along With The Description -->
+        <dl>
+            <!-- The Description Term Comes First -->
+            <dt>Coffee</dt>
+            <!-- Followed By The Terms Description -->
+            <!-- The Description Is Indented -->
+            <dd>- Typically a hot brewed drink.</dd>
+
+            <dt>Tea</dt>
+            <dd>- Hot drink which most tend to use to substitute coffee.</dd>
+
+            <dt>Refresher</dt>
+            <dd>- A cool light caffeinated drink.</dd>
+            
+        </dl>
+
+        <h1>Unodered Lists</h1>
+        <!-- "list-style-type" Is Used To Change The Marker For Unordered Lists -->
+        
+        <!-- This Is The Default Unordered List Marker -->
+        <ul style = "list-style-type: disc">
+            <li>Coffee </li>
+            <li>Tea</li>
+            <li>Refresher</li>
+
+        </ul>
+
+        <!-- The Markers Are Circles Without A Filler -->
+        <ul style="list-style-type: circle">
+            <li>Coffee </li>
+            <li>Tea</li>
+            <li>Refresher</li>
+        
+        </ul>
+
+        <!-- The Markers Are Squares -->
+        <ul style="list-style-type: square">
+            <li>Coffee </li>
+            <li>Tea</li>
+            <li>Refresher</li>
+        
+        </ul>
+
+        <!-- There Are No Markers -->
+        <ul style="list-style-type: none">
+            <li>Coffee </li>
+            <li>Tea</li>
+            <li>Refresher</li>
+        
+        </ul>
+
+        <!-- By Default A Second List Within A List Uses The Circle As The Marker -->
+        <!-- Another List Withing That Second List Uses The Square As The Marker -->
+        <!-- An Other Lists Following Continue To Use The Square Marker -->
+        <!-- This Is Called Nestes Lists -->
+        <ul>
+            <li>Coffee</li>
+            <ul>
+                <li>Brewed</li>
+                <li>Latte</li>
+                <li>Mocha</li>
+                <li>Americano</li>
+
+            </ul>
+
+            <li>Tea</li>
+            <ul>
+                <li>Iced Teas</li>
+                <ul>
+                    <li>Black Tea</li>
+                    <li>Green Tea</li>
+                    <li>Passion Tango Tea</li>
+
+                </ul>
+
+                <li>Hot Teas</li>
+                <ul>
+                    <li>Royal English Breakfast</li>
+                    <li>Mint Majesty</li>
+                    <li>Chai</li>
+
+                </ul>
+
+            </ul>
+
+            <li>Refresher</li>
+            <ul>
+                <li>Mango Dragon Fruit</li>
+                <ul>
+                    <li>Without Milk</li>
+                    <ul>
+                        <li>Mango Dragron Fruit</li>
+                        <li>Mango Dragron Fruit Lemonade</li>
+
+                    </ul>
+
+                    <li>With Milk</li>
+                    <ul>
+                        <li>Dragon Drink</li>
+
+                    </ul>
+
+                </ul>
+
+                <li>Strawberry Acai</li>
+                <ul>
+                    <li>Without Milk</li>
+                    <ul>
+                        <li>Strawberry Acai</li>
+                        <li>Strawberry Acai Lemonade</li>
+
+                    </ul>
+
+                    <li>With Milk</li>
+                    <ul>
+                        <li>Pink Drink</li>
+
+                    </ul>
+
+                </ul>
+
+
+                <li>Pineapple Passion Fruit</li>
+                <ul>
+                    <li>Without Milk</li>
+                    <ul>
+                        <li>Pineapple Passion Fruit</li>
+                        <li>Pineapple Passion Fruit Lemonade</li>
+
+                    </ul>
+
+                    <li>With Milk</li>
+                    <ul>
+                        <li>Paradise Drink</li>
+
+                    </ul>
+
+                </ul>
+
+            </ul>
+
+        </ul>
+
+        <!-- Horizontal List -->
+        <!-- This Can Be Used To Create A Navigation Menu -->
+        <ul style="background-color: aqua; list-style-type: none; margin: 0px; padding: 0px; overflow: hidden;">
+            <li style = "float: left; display: block; text-align: center; padding: 16px; text-decoration: none;">Coffee </li>
+            <li style = "float: left; display: block; text-align: center; padding: 16px; text-decoration: none;">Tea</li>
+            <li style = "float: left; display: block; text-align: center; padding: 16px; text-decoration: none;">Refresher</li>
+        
+        </ul>
+
+    </body>
+
+</html>
