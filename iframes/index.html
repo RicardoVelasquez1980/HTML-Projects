@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>iframes</title>
+        <link rel = "icon"  href = "favicon.ico">
+        
+    </head>
+
+    <body>
+        <h1>iframe Basics</h1>
+        
+        <!-- iframes Are Used To Embed Another Document Within The Current HTML Document -->
+        <iframe src = "example.html" title = "iframe example"></iframe>
+        <br>
+
+        <!-- Size Can Be Changed -->
+        <iframe src = "example.html" title = "iframe example" width = "500px" height = "250px"></iframe>
+        <iframe src = "example.html" title = "iframe example" style = "width: 500px; height: 250px"></iframe>
+        <br>
+
+        <!-- By Default iframes Have Borders Around Them -->
+        <!-- You Can Get Rid Of These Or Change Them -->
+        <iframe src = "example.html" title = "iframe example" style = "width: 500px; height: 250px; border: none"></iframe>
+        <iframe src = "example.html" title = "iframe example" style = "width: 500px; height: 250px; border: 4px solid blue"></iframe>
+        <br>
+
+        <!-- You Can Also Make The Target For A Link Be An iframe -->
+        <!-- In Order To Do This You Need To Add The "name" Attribute To The iframe -->
+        <!-- Then Reference The Name In The "target" Attribute In The Link Element -->
+        <iframe name = "iframe1" src = "example.html" title = "iframe example" style = "width: 500px; height: 250px"></iframe>
+        <br>
+        
+        <a href = "https://www.w3schools.com/html/html_iframe.asp" target = "iframe1">W3Schools Iframe Tutorial</a>
+
+    </body>
+
+</html>
