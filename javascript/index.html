@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Javascript</title>
+        <link rel = "icon" href = "favicon.ico">
+
+        <style>
+            #explanation1 {
+                text-decoration: underline;
+
+            }
+            
+            #explanation2 {
+                font-weight: bold;
+
+            }
+
+            #imgEx {
+                width: 200px;
+                height: 200px;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Script Basics</h1>
+
+        <p id = "explanation1">
+            You can use Javascript to make your website more interactive.
+
+        </p>
+
+        <button name = "expButt" type = "button" onclick = "deltaExplanation()">Click Me!</button>
+
+        <script>
+            function deltaExplanation() {
+                if (document.getElementById("explanation1")){
+                    document.getElementById("explanation1").innerHTML = "The JS could be within the HTML itself";
+                    document.getElementById("explanation1").id = "explanation2";
+                    let butts = document.getElementsByName("expButt");
+                    butts[0].innerHTML = "Click Me Again!";
+                    butts[0].style.backgroundColor = "aqua";
+
+                } else {
+                    document.getElementById("explanation2").innerHTML = "Or you can point to an external JS file using the src attribute, as the following example does.";
+                    document.getElementById("explanation2").id = "explanation1";
+
+                }
+
+            }
+
+        </script>
+
+        <p>
+            This is an example of an external script changing an image.
+
+        </p>
+        <br>
+
+        <img id = "imgEx" src = "IMG.jpg" alt = "Picture Of Me">
+        <br>
+
+        <button type = "button" onclick = "changeImg()">Change Image</button>
+
+        <script src = "example.js"></script>
+
+        <h1>NoScript</h1>
+
+        <p>
+            Ok so lets say someone has disabled scripts in their browser.
+            All the scripts you have in your site wont run, 
+            <br>
+
+            so one thing you can do is apply a <i>noscript</i>.
+            This will be the alternative content that will be shown.
+            <br>
+            <br>
+
+            <b>Look in the script for the example.</b>
+            
+        </p>
+
+        <!-- This Is The Alternative Content That Will Be Displayed -->
+        <noscript>Sorry, your browser doesnt support Javascript.</noscript>
+
+    </body>
+
+</html>
