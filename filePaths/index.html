@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>File Paths</title>
+        <link rel = "icon" href = "favicon.ico">
+
+        <style>
+            body {
+                background-color: gray;
+
+            }
+
+            p {
+                font-size: 18px;
+
+            }
+
+            img {
+                width: 200px;
+                height: 250px;
+
+            }
+
+            dt {
+                font-weight: bold;
+                
+            }
+
+            .absoluteFP {
+                color: rgb(0, 66, 142);
+                text-align: center;
+
+            }
+
+            .relativeFP {
+                color: rgb(0, 83, 156);
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class = "absoluteFP">
+            <h1>Absolute File Path</h1>
+
+            <p>
+                An <i>Absolute File Path</i> is the full URL to a file.
+                The URL can link to an external file, <i>from another site</i>, or internally, <i>from the same site</i>.
+                <br>
+
+                <img src = "https://www.w3schools.com/images/w3lynx_200.png">
+                <br>
+
+                This image is an <i>Absolute File Path</i> because it uses a full URL to link to an
+                external file.
+
+            </p>
+
+        </div>
+
+        <div class = "absoluteFP relativeFP">
+            <h1>Relative File Path</h1>
+
+            <p>
+                A <i>Relative File Path</i> points to a file on the current page.
+                It is typically best to use these when possible.
+
+            </p>
+
+            <dl>
+                <dt>File In Same Folder As Current Page</dt>
+                <dd><q>file.type</q></dd>
+
+                <dt>File In A Folder In The Current Folder</dt>
+                <dd><q>folder/file.type</q></dd>
+
+                <dt>File In A Folder At Root Of Current Page</dt>
+                <dd><q>/folder/file.type</q></dd>
+
+                <dt>File In A Folder One Lever Above From Current Folder</dt>
+                <dd><q>../file.type</q></dd>
+
+            </dl>
+
+        </div>
+
+    </body>
+
+</html>
