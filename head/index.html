@@ -1,0 +1,101 @@
+<!DOCTYPE htmml>
+
+<html>
+    <head>
+        <title>Head</title>
+        <link rel = "icon" href = "favicon.ico">
+
+        <meta charset = "UTF-8">
+        <meta name = "keywords" content = "head, element, title, link, style, meta, script, viewport, base">
+        <meta name = "description" content = "All about the Head Element">
+        <meta name = "author" content = "Ricardo Velasquez">
+        <meta http-equiv = "refresh" content = "60">
+        <!-- "viewport" Is Users Visible Area Of The Site, This Various With The Device -->
+        <!-- Doing What Is Below Gives The Browser Instructions As To How Control The Sites Dimenstions And Scaling -->
+        <!-- "width = device-width" Makes The Site Width Follow The Width Of THe Device Being Used -->
+        <!-- "initial-scale = 1.0" Sets The Initial Zoom Level When The Site Is First Loaded -->
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!-- Adding THe Target Here Makes It So Al Clickable Links With The Base Will Follow THe Base Target Unless Otherwise Specified -->
+        <base href = "https://www.w3schools.com/" target = "_blank">
+
+    </head>
+
+    <body>
+        <h1>Intro</h1>
+
+        <p>
+            The Head is an element which contains
+            <span title = "Data About Data" style = "font-style: italic">metadata</span>.
+            Metadata usually defines the document title, character set, styles, script, and more. It also isnt displayed.
+
+        </p>
+
+        <h1>Title</h1>
+
+        <p>
+            The <i>title</i> is the title of the document and is shown in the browsers title bar, the name on the pages tab.
+            The <i>title</i> is required since it is used for
+            <span title = "Search Engine Optimization">SEO</span>
+            and to allow search engine algorithms to decide the order when listing pages in search result.
+            <br>
+
+        </p>
+
+        <h1>Style</h1>
+
+        <p>
+            Just the styling for the single HTML document.
+
+        </p>
+        
+        <h1>Link</h1>
+
+        <p>
+            The <i>link</i> element defines the relationship between the current document and an external resource.
+            <br>
+
+            <i>Link</i> is mainly used to reference external style sheets or add an icon next to the page title.
+
+        </p>
+
+        <h1>Meta</h1>
+
+        <p>
+            The <i>meta</i> element is usually used to specify the character set, page description, keywords,
+            author of the document, and viewport settings.
+            <br>
+
+            <i>Meta</i> isnt displayed but it is used by the browsers to know how to display content or reload the page,
+            by search engines to get the keywords, and by other web services.
+
+        </p>
+
+        <h1>Scripts</h1>
+
+        <p>
+            Scripts can be in the <i>head</i> element but it is best to put them just before closing the body.
+            This way when loading a script it wont delay loadin the HTML.
+            <br>
+
+            Also if the script were to not load then the everything under it wont load.
+
+        </p>
+
+        <h1>Base</h1>
+
+        <p>
+            The <i>base</i> element specifies the base URL for all relative URLs in the page. 
+            <br>
+
+            So if you were to do <q>images/face.png</q>, it will become <q>baseURL/images/face.png</q>
+            <br>
+
+            There can also only be one base element in the entire document.
+            Look at the code to see how to make a base URL.
+
+        </p>
+
+    </body>
+
+</html>
