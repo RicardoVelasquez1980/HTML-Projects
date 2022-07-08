@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <title>Entitites</title>
+        <link rel="icon" href="favicon.ico">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale:1.0">
+
+    </head>
+
+    <body>
+        <h1>Entity Basics</h1>
+
+        <p>
+            As you have noticed, literally typing &lt; or &gt; within a paragraph,
+            or anything else which contains text, has its issues within the HTML itself.
+            <br>
+
+            These characters are reserved characters. And so this is where entities come in.
+            Entities are used in order to display reserved characters. Below is a list of these reserved characters.
+            <br>
+
+            <i>Look at the code for how its done</i>
+
+        </p>
+
+        <!-- I Display Each Character Twice -->
+        <!-- Once Using The Entity Name -->
+        <!-- Once Using The Entity Number -->
+        <ul>
+            <!-- Non-Breaking Space -->
+            <!-- A Space That Wont Break Into A New Line -->
+            <!--
+                This Is Useful If You Want To Keep Words Next To Each Other
+                But Would Otherwise Break Into A New Line Due TO Word Wrap
+            -->
+            <li>&nbsp; &#160;</li>
+            <!-- Less Than -->
+            <li>&lt; &#60;</li>
+            <!-- Greater Than -->
+            <li>&gt; &#62;</li>
+            <!-- Ampersand -->
+            <li>&amp; &#38;</li>
+            <!-- Double Quotation Mark -->
+            <li>&quot; &#34;</li>
+            <!-- Single Quotation Mark(Apostrophe) -->
+            <li>&apos; &#39;</li>
+            <!-- Cent -->
+            <li>&cent; &#162;</li>
+            <!-- Pound -->
+            <li>&pound; &#163;</li>
+            <!-- Yen -->
+            <li>&yen; &#165;</li>
+            <!-- Euro -->
+            <li>&euro; &#8364;</li>
+            <!-- Copyright -->
+            <li>&copy; &#169;</li>
+            <!-- Registered Trademark -->
+            <li>&reg; &#174;</li>
+
+        </ul>
+
+        <h1>Diacritical Marks</h1>
+
+        <p>
+            These are marks which go over letters, such as the tilde.
+            The following is a list of them.
+            <br>
+
+            <i>Look at the code for how its done</i>
+
+        </p>
+
+        <ul>
+            <!-- With Lowercase Letters -->
+            <li>a&#768</li>
+            <li>b&#769</li>
+            <li>c&#770</li>
+            <li>d&#771</li>
+
+            <!-- With Uppercase Letters -->
+            <li>E&#768</li>
+            <li>F&#769</li>
+            <li>G&#770</li>
+            <li>H&#771</li>
+
+        </ul>
+
+    </body>
+</html>
