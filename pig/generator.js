@@ -15,6 +15,17 @@ const ideas = [
     "Animation",
     "Cards",
     "Instagram Post",
+    "Product Display Card",
+    "Expenses Chart",
+    "Interactive Rating",
+    "Generators",
+    "NFT Preview Card",
+    "Order Summary",
+    "Tip Calculator",
+    "Profile Card",
+    "Artcile Preview",
+    "Sign-Up Form",
+    "Frontend Mentor Challenges"
 
 ];
 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel ="icon" href ="favicon.ico">
+
+    </head>
+
+    <body>
+        <h1>Form Basics</h1>
+
+        <!-- Form Is Used When Collecting User Data Which Will Be Sent To A Server For Processing -->
+        <!-- The Form Acts As A Container For Form Elements -->
+        <form>
+            <!-- Input: The Most Used Form Element -->
+            <!-- Below Are Just A Few Of Many Input Types, Will Be Covers In Inputs Lesson -->
+
+            <p>Text Input</p>
+            <input type ="text"><br>
+
+            <p>Radio Input</p>
+            <!-- Only One Of Many Options Can Be Selected But They Must Have The Same Name -->
+            <input type ="radio" name ="ok"><br>
+            <input type ="radio" name ="ok"><br>
+            <input type ="radio"><br>
+
+            <p>Checkbox Input</p>
+            <!-- Zero Or More Options Can Be Selected -->
+            <input type ="checkbox"><br>
+
+            <p>Submit Input</p>
+            <!-- Submits The Form -->
+            <input type ="submit"><br>
+
+            <p>Button Input</p>
+            <input type ="button">
+
+        </form>
+
+        <h1>Form Label</h1>
+
+        <form>
+            <!-- The Label, As In The Name, Labels The Form Elements -->
+            <!-- In Order For The Label To Know Which Elements Its Attached To It Must Have The "for" Attribute -->
+            <!-- The Name In The "for" Attribute Should Match That Of The "id" In THe Element -->
+
+            <label for ="fullName">Full Name</label><br>
+            <input type ="text" id ="fullName"><br>
+
+            <label for ="milk">Milk</label>
+
+        </form>
+
+    </body>
+
+</html>
