@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en-US">
     <head>
         <title>Forms</title>
-        <link rel ="icon" href ="favicon.ico">
+        <link rel="icon" href="favicon.ico">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
 
     </head>
 
@@ -17,24 +20,24 @@
             <!-- Below Are Just A Few Of Many Input Types, Will Be Covers In Inputs Lesson -->
 
             <p>Text Input</p>
-            <input type ="text"><br>
+            <input type="text"><br>
 
             <p>Radio Input</p>
             <!-- Only One Of Many Options Can Be Selected But They Must Have The Same Name -->
-            <input type ="radio" name ="ok"><br>
-            <input type ="radio" name ="ok"><br>
-            <input type ="radio"><br>
+            <input type="radio" name="ok"><br>
+            <input type="radio" name="ok"><br>
+            <input type="radio"><br>
 
             <p>Checkbox Input</p>
             <!-- Zero Or More Options Can Be Selected -->
-            <input type ="checkbox"><br>
+            <input type="checkbox"><br>
 
             <p>Submit Input</p>
             <!-- Submits The Form -->
-            <input type ="submit"><br>
+            <input type="submit"><br>
 
             <p>Button Input</p>
-            <input type ="button">
+            <input type="button">
 
         </form>
 
@@ -44,11 +47,129 @@
             <!-- The Label, As In The Name, Labels The Form Elements -->
             <!-- In Order For The Label To Know Which Elements Its Attached To It Must Have The "for" Attribute -->
             <!-- The Name In The "for" Attribute Should Match That Of The "id" In THe Element -->
+            <!-- Order Matters For Where The Label Will Be -->
 
-            <label for ="fullName">Full Name</label><br>
-            <input type ="text" id ="fullName"><br>
+            <label for="fName">First Name</label><br>
+            <input type="text" id="fName"><br>
+            
+            <label for="lName">Last Name</label>
+            <input type="text" id="lName"><br>
 
-            <label for ="milk">Milk</label>
+            <input type="radio" id="milk" name="dairy">
+            <label for="milk">Milk</label><br>
+
+            <label for="yogurt">Yogurt</label>
+            <input type="radio" id="yogurt" name="dairy"><br>
+
+            <input type="checkbox" id="beef" name="meat">
+            <label for="beef">Beef</label><br>
+
+            <label for="pork">Pork</label>
+            <input type="checkbox" id="pork" name="meat">
+
+        </form>
+
+        <h1>Attributes</h1>
+
+        <!-- The "action" Attribute Defines Where The Data Which Has Been Submitted Will Be Taken For Handling -->
+        <!-- If You Dont Add Action Attribute It Will Default To The Current Page -->
+
+        <!-- "method" Specifies The HTTP Method Which Will Be Used When Submitting The Form -->
+        <!-- 
+            "get"
+                - Will Make It So The Answer Is Shown In The URL
+                - The URL Is Limited To 2048 Characters
+                - Users Can Bookmark The Results
+                - Good For Non-Secure Data
+                - DONT USE IF DATA IS SENSITIVE OR PERSONAL
+
+         -->
+        <!-- 
+            "post"
+                - Will Make It So The Answer Isnt Shown In The URL
+                - No Size Limitations
+                - Results Cannot Be Bookmarked
+                - USE IF DATA IS SENSITIVE OR PERSONAL
+
+         -->
+
+         <!-- So You Know How Forms Which You Have Filled Out Before, Especially Login Forms, Suggest Inputs You Have Done Before. -->
+         <!-- Well That Is Exactly What "autocomplete" Does -->
+
+         <!-- GO INTO THE "novalidate" MORE, IT IS A BIT CONFUSING. BELOW IS WHAT I UNDERSTAND FROM IT SO FAR -->
+         <!-- Prevents Browsers Form Validations From Occuring When A Form Is Submitted So You Can Have Your Own Run -->
+        <form action="aciton_file.filetype" method="get" autocomplete="on" target="_blank">
+            <input type="radio" id="milk" name="desire">
+            <label for="milk">Milk</label><br>
+            <input type="submit">
+
+        </form>
+
+        <h1>Elements</h1>
+
+        <form>
+            <!-- Most Common Form Element And Can Be Displayed Multiple Ways As Will Be Gone Through In The Input Lesson -->
+            <input type="text" value="Most Used Form Element"><br>
+
+            <!-- As You Learned, It Labels Form Elements -->
+            <label>Form Element Label</label><br>
+
+            <!-- Creates A Drop-Down List -->
+            <!-- "size" Specifies The Amount Of Visible Options, If Not Specified It Defaults To One -->
+            <!-- "multiple" Allows For Multiple Selections, To Do This Hold Down CNTRL/CMD When Selecting -->
+            <select size="2" multiple>
+                <!-- The Options Which Will Be In The List -->
+                <option value="cheese">Cheese</option>
+                <!-- "selected" Makes This Option Become Pre-Selected, If Included Then The First Option Is Pre-Selected -->
+                <option value="yogurt" selected>Yogurt</option>
+                <option value="milk">Milk</option>
+
+            </select><br>
+
+            <!-- Multi-Line Input -->
+            <!-- "rows" And "cols" Specifies The Number Of Visible Lines -->
+            <!-- The Size Can Also be Specified Using Width/Height In CSS -->
+            <textarea rows="5" cols="30">You can add pre-"typed" text in here.</textarea><br>
+
+            <button type="button" onclick="alert('Always Specify Type')">Click Me!</button><br>
+
+            <!-- A Fieldset Is Used TO Group Related Data In A Form -->
+            <fieldset>
+                <!-- Legend Is The Caption For The Fieldset -->
+                <legend>Identity</legend>
+
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname"><br>
+
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname">
+
+            </fieldset><br>
+
+            <input type="text" list="suggestions">
+            <!-- Datalist Specifies A Pre-Determined List Of Options For An Input Element -->
+            <!-- 
+                So What Makes This Any Different From Using The "select" Element?
+                Well These Arent Required Options, Its More Of A Suggestion, And Unlike "select"
+                You Can Input Almost Anything
+
+             -->
+            <datalist id="suggestions">
+                <option value="ok"></option>
+                <option value="cheese"></option>
+                <option value="milk"></option>
+                <option value="yogurt"></option>
+                <option value="sugar"></option>
+                <option value="shoes"></option>
+                <option value="no correlation"></option>
+
+            </datalist>
+
+            <p>
+                For an example of how output works and what it does got to
+                <a href="https://www.w3schools.com/html/html_form_elements.asp" target="_blank">W3Schools</a>.
+
+            </p>
 
         </form>
 
