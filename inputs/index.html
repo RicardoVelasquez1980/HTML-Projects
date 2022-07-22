@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <title>Inputs</title>
+        <link rel="icon" href="favicon.ico">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+        <h1>Input Basics</h1>
+
+        <h2>Button</h2>
+        <p>
+            Just a simple button, straight forward to understand.
+            
+        </p>
+        <input type="button" value="Click Me!" onclick="alert('You just clicked a button.')">
+        
+        <h2>Checkbox</h2>
+        <p>
+            Zero or more options may be selected.
+            
+        </p>
+        <input type="checkbox">
+
+        <h2>Color</h2>
+        <p>
+            The way the color picker looks depends on the browser.
+
+        </p>
+        <!-- Tried Using rgb() To Specify The Color Value But It Doesnt Seem To Work -->
+        <input type="color" value="#0000ff">
+
+        <h2>Date</h2>
+        <p>
+           The way the date looks depends on the browser.<br>
+           Also when specifying a min/max date make sure to use the following format, <i>YYYY/MM/DD</i>
+
+        </p>
+        <input type="date" min="2000-01-01" max="2026-01-01">
+
+        <h2>Datetime-Local</h2>
+        <p>
+            The way the datetime-local looks depends on the browser.<br>
+            Just like the <i>date</i> type but it also contains a time, and the time doesnt have a specified time zone.
+
+        </p>
+        <input type="datetime-local">
+
+        <h2>Email</h2>
+        <p>
+            The way the email looks depends on the browser.<br>
+            Some Mobile devices recognize the email type and add the <i>.com</i> to the keyboard.
+
+        </p>
+        <input type="email">
+
+        <h2>File</h2>
+        <p>
+            Literally behaves like all file inputs which you have used throughout your life.
+
+        </p>
+        <input type="file">
+        
+        <h2>Hidden</h2>
+        <p>
+            This input, as you can guess, is hidden from the user and cant be changed.<br>
+            Although it can be seen if users use Dev Tools or View Source, so its best not to use as a form of security.<br>
+            This is used when you want to store some data which will be included with the rest of the form without worrying about
+            it being altered, an example can be a form id.
+
+        </p>
+        <input type="hidden">
+
+        <h2>Image</h2>
+        <p>
+            Same functionality as the "submit" type but the difference is that it is used to replace the submit button
+            with an image.
+
+        </p>
+        <input type="image">
+
+        <h2>Month</h2>
+        <p>
+            The way the month looks depends on the browser.
+
+        </p>
+        <input type="month">
+
+        <h2>Number</h2>
+        <p>
+            Allows for the input of a number.<br>
+            You can set restrictions.
+
+        </p>
+        <input type="number" min="1" max="4">
+
+        <h2>Password</h2>
+        <p>
+            The characters in a password field are masked as asterisks or circles.
+
+        </p>
+        <input type="password">
+
+        <h2>Radio</h2>
+        <p>
+            Only one of the many options can be selected.<br>
+            Remember to give all related options the same name else the user can select multiple.
+
+        </p>
+        <input type="radio">
+
+        <h2>Range</h2>
+        <p>
+            By default the range is 0 to 100.
+
+        </p>
+        <input type="range" min="50" max="1980">
+
+        <h2>Reset</h2>
+        <p>
+            Easy to guess what this does.<br>
+            Has to be in a form though for it to work and it will only work for the form elements in the same form.
+
+        </p>
+        <input type="reset">
+
+        <h2>Search</h2>
+        <p>
+            Behaves like the "text" type but its used for search fields. I dont know, search it up. Pun unintended.
+
+        </p>
+        <input type="search">
+
+        <h2>Submit</h2>
+        <p>
+            Submits the form to the form handler which is covered in the <a href="../forms/index.html">Form Lesson</a>.
+
+        </p>
+        <input type="submit">
+
+        <h2>Tel</h2>
+        <p>
+            For telephone number inputs.
+
+        </p>
+        <input type="tel">
+
+        <h2>Text</h2>
+        <p>
+            Single line text input.<br>
+            This is the default input type if non are specified.
+
+        </p>
+        <input type="text">
+
+        <h2>Time</h2>
+        <p>
+            The way the time looks depends on the browser.<br>
+            Time zone isnt specified.
+
+        </p>
+        <input type="time">
+
+        <h2>URL</h2>
+        <p>
+            URL field may be automatically validated when submitted, depends on the browser.<br>
+            On Mobile devices the keyboard adds <i>.com</i> when it recognizes the url type.
+
+        </p>
+        <input type="url">
+
+        <h2>Week</h2>
+        <p>
+            The way week looks depends on the browser.
+
+        </p>
+        <input type="week">
+
+    </body>
+
+</html>
