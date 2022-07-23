@@ -181,6 +181,162 @@
         </p>
         <input type="week">
 
+        <!-- Most Of These Example Contain The "text" Input Type -->
+        <h1>Attributes</h1>
+
+        <h2>Value</h2>
+        <p>
+            Sets an initial value for the input.
+
+        </p>
+        <input type="text" value="I wont float">
+
+        <!-- Use This If You Want To Prevent The User From Changing The Value But Still See What The Value Is -->
+        <!-- An Example Of This Is A Users Username -->
+        <!-- This Is What Makes It Different From The "hidden" Input Type -->
+        <h2>Readonly</h2>
+        <p>
+            Makes an input readable only. So it cant be changed at all.<br>
+            Although if its text then it can be highlighted and copied.<br>
+            And dont worry, the value in this will still be sent when submitting the form.
+
+        </p>
+        <input type="text" value="What if- What if I dont float" readonly>
+
+        <h2>Disabled</h2>
+        <p>
+            Makes an input field unusable and un-clickable.<br>
+            The value in this will not be sent when the form is submitted.
+
+        </p>
+        <input type="text" value="They keep on using me" disabled>
+
+        <h2>Size</h2>
+        <p>
+            Specifies the visible width. By default this width is 20.<br>
+            This attribute also only works on the following input types:
+            <i>text</i>, <i>search</i>, <i>tel</i>, <i>url</i>, <i>email</i>, and <i>password</i>.
+
+        </p>
+        <input type="password" size="50">
+
+        <h2>Maxlength</h2>
+        <p>
+            Sets a max length of characted which can be typed.<br>
+            When it reaches the max length it just stops accepting more characters so if you want to
+            give the user an alert that they reached max length then you must use JS.<br>
+            Also, as you can probably guess, only works on text accepting input types.
+
+        </p>
+        <input type="tel" maxlength="10">
+
+        <h2>Min/Max</h2>
+        <p>
+            Sets the min and max values of an input.<br>
+            This can only be used for the following input types:
+            <i>number</i>, <i>range</i>, <i>date</i>, <i>datetime-local</i>, <i>month</i>, <i>time</i>, and <i>week</i>.<br>
+            It is advisable to use both the min and max in order to create a range of <i>legal</i> values.
+
+        </p>
+        <input type="number" min="2" max="10" value="2">
+
+        <h2>Multiple</h2>
+        <p>
+            Allows the user to insert multiple values.<br>
+            This is only works for the following input types:
+            <i>email</i> and <i>file</i>.<br>
+            When using this on the file, multiple files can be selected at a time.<br>
+            When using this on the email, each email is seperated by a comma(,).
+
+        </p>
+        <input type="email" multiple>
+
+        <h2>Pattern</h2>
+        <p>
+            Only applicable for the following input types:
+            <i>text</i>, <i>date</i>, <i>search</i>, <i>url</i>, <i>tel</i>, <i>email</i>, and <i>password</i>.<br>
+            Learn more about possible patterns by learning about <i>JS Regular Expressions</i>.
+
+        </p>
+        <form>
+            <input type="text" pattern="hello">
+            <input type="submit">
+
+        </form>
+
+        <h2>Placeholder</h2>
+        <p>
+            Describes the expected value through a small description or an example.<br>
+            This is useful when you have added a pattern.<br>
+            Only works for the following input types:
+            <i>text</i>, <i>search</i>, <i>url</i>, <i>tel</i>, <i>email</i>, <i>password</i>.
+
+        </p>
+        <input type="email" placeholder="example@gmail.com">
+
+        <h2>Required</h2>
+        <p>
+            Allows you to make an input necessary to fill out in order to submit the form.<br>
+            Only applicable for the following input types:
+            <i>text</i>, <i>search</i>, <i>url</i>, <i>tel</i>, <i>email</i>, <i>password</i>, <i>date pickers</i>,
+            <i>number</i>, <i>checkbox</i>, <i>radio</i>, and <i>file</i>.
+
+        </p>
+        <form>
+            <label for="proceed">Proceed?</label><br>
+            <input type="radio" name="proceed" required><br>
+            <input type="submit">
+
+        </form>
+
+        <h2>Step</h2>
+        <p>
+            Used to specify a "legal" number of intervals for the value.<br>
+            This is only applicable for the following input types:
+            <i>number</i>, <i>range</i>, <i>date</i>, <i>datetime-local</i>, <i>month</i>, <i>time</i>, and <i>week</i>.<br>
+            Restrictions arent foolproof.
+
+        </p>
+        <input type="number" min="0" max="11" step="3" value="0">
+
+        <h2>Autofocus</h2>
+        <p>
+            Makes the input be selected as soon as the site loads.
+
+        </p>
+        <input type="radio" autofocus>
+
+        <h2>Height/Width</h2>
+        <p>
+            Used to specify thw width and height of an "image" input type.<br>
+            Make sure to use this since not using it may bring layout issues.
+
+        </p>
+        <input type="image" src="https://www.w3schools.com/html/img_submit.gif" alt="Submit" width="50" height="50">
+        
+        <h2>List</h2>
+        <p>
+            Used when refering to a datalist element.
+
+        </p>
+        <input list="dairy">
+        <datalist id="dairy">
+            <option value="milk"></option>
+            <option value="cheese"></option>
+            
+        </datalist>
+
+        <h2>Autocomplete</h2>
+        <p>
+            Tells the input whether it has autocomplete on or off.<br>
+            Autocomplete allows the browser to predict what the user will type and suggests options.<br>
+            Only applicable to the following input types:
+            <i>text</i>, <i>search</i>, <i>url</i>, <i>tel</i>, <i>email</i>, <i>password</i>, <i>datepickers</i>,
+            <i>range</i>, and <i>color</i>.
+
+        </p>
+        <input type="text" autocomplete="on">
+
     </body>
 
 </html>
