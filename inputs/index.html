@@ -182,7 +182,7 @@
         <input type="week">
 
         <!-- Most Of These Example Contain The "text" Input Type -->
-        <h1>Attributes</h1>
+        <h1>Input Attributes</h1>
 
         <h2>Value</h2>
         <p>
@@ -336,6 +336,83 @@
 
         </p>
         <input type="text" autocomplete="on">
+
+        <!-- To Clarify, Input Form Attributes Are Input Attributes Which Override The Actual Form Attributes -->
+        <h1>Input FormAttributes</h1>
+
+        <h2>Form</h2>
+        <p>
+            Form allows you to specify which form an input is attached to.
+
+        </p>
+        <form id="identity" action="cheese/index.html" method="get" target="_blank">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName"><br>
+            <input type="submit">
+
+        </form>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" form="identity">
+
+        <h2>FormAction</h2>
+        <p>
+            Overrides the action attribute in the form and takes the data to the overriding file for processing.<br>
+            This is only applicable for the following input types:
+            <i>submit</i> and <i>image</i>.
+
+        </p>
+        <form action="dairy/index.html" target="_blank">
+            <input type="submit">
+            <input type="submit" formaction="cheese/index.html">
+
+        </form>
+
+        <h2>FormEnctype</h2>
+        <p>
+            Overrides the enctype attrubite in the form.<br>
+            Only applicable for the following types:
+            <i>submit</i> and <i>image</i>.<br>
+            Look at <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_formenctype" target="_blank">
+                W3Schools Example</a>.
+
+        </p>
+
+        <h2>FormMethod</h2>
+        <p>
+            Overrides the method attribute in the form.<br>
+            Only applicable for the following input types:
+            <i>submit</i> and <i>image</i>.
+
+        </p>
+        <form method="post">
+            <input type="submit" formmethod="get">
+
+        </form>
+
+        <h2>FormTarget</h2>
+        <p>
+            Overrides the target attribute in the form.<br>
+            Only applicable for the following input types:
+            <i>submit</i> and <i>image</i>.
+
+        </p>
+        <form>
+            <input type="submit" formtarget="_blank">
+
+        </form>
+
+        <h2>FormNovalidate</h2>
+        <p>
+            Makes the form novalidate if it isnt already.<br>
+            Only works for the submit input type.
+
+        </p>
+        <form>
+            <input type="submit" formnovalidate>
+
+        </form>
+
+        <h2></h2>
 
     </body>
 
