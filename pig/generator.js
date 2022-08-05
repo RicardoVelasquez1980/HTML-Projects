@@ -26,7 +26,7 @@ const ideas = [
     "Artcile Preview",
     "Sign-Up Form",
     "Frontend Mentor Challenges",
-    "Wikipedia Page"
+    "Wikipedia Page Copy"
 
 ];
 
