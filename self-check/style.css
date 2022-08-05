@@ -1,0 +1,111 @@
+body {
+    background-color: #FACF3E;
+    color: #3E5BC7;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.form, .container {
+    background-color: #FFE9A0;
+    /* width: 75ch; */
+    width: 45%;
+    margin: 2em auto;
+    padding: 1em;
+    box-shadow: 4px 3px 5px #3E5BC7;
+
+}
+
+/* Global Styling */
+
+h1 {
+    font-size: 3em;
+
+}
+
+/* Form Styling */
+
+.form h2 {
+    margin: 0em;
+
+}
+
+.form p {
+    font-size: 0.75em;
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-bottom: 1.3em;
+
+}
+
+.form hr {
+    border-top: 2px solid #3E5BC7;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: 1.5em;
+
+}
+
+.navbar {
+    background-color:#FACF3E;
+    list-style-type: none;
+    margin: 0em;
+    padding: 0.5em 0em;
+    text-align: center;
+
+}
+
+.navbar li {
+    display: inline;
+    margin: 0em 1em;
+    padding: 0.6em 1em;
+
+}
+
+.navbar li:hover {
+    background-color: #FFE9A0;
+    
+}
+
+.navbar a {
+    color: #3E5BC7;
+    text-decoration: none;
+
+}
+
+#q1, #q2, #q3 {
+    margin-bottom: 3em;
+
+}
+
+#q2 textarea, #q3 textarea, #q4 textarea {
+    max-width: 99%;
+    max-height: 158px;
+    min-width: 50%;
+    min-height: 158px;
+
+}
+
+#q3 textarea, #q4 textarea {
+    max-height: 82px;
+    min-height: 82px;
+
+}
+
+#submit {
+    margin-top: 1.5em;
+    background-color: #FACF3E;
+    color: #3E5BC7;
+    border: 2px solid #3E5BC7;
+
+}
+
+#submit:hover {
+    background-color: #FFE9A0;
+    cursor: pointer;
+
+}
+
+/* Response Styling */

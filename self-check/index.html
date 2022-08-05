@@ -1,0 +1,103 @@
+<!-- Primary Color: #FACF3E -->
+<!-- Secondary Color: #FFE9A0 -->
+<!-- Accent Color: #3E5BC7 -->
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <title>Self Check-In</title>
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ricardo">
+        <meta name="keywords" content="happy, survey, self, reflection, improvement">
+        <meta name="description" content="A self check-in survey to allow you to check in on yourself and improve both your mood and your life">
+
+    </head>
+    
+    <body>
+        <div class="form">
+            <header>
+                <h1>Self Check-In</h1>
+
+            </header>
+
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#q1">Question 1</a></li>
+                    <li><a href="#q2">Question 2</a></li>
+                    <li><a href="#q3">Question 3</a></li>
+                    <li><a href="#q4">Question 4</a></li>
+
+                </ul>
+
+            </nav>
+
+            <hr>
+
+            <main>
+                <form id="selfCheckForm" action="response.html" method="get">
+                    <div id="q1">
+                        <h2>How was your day?</h2>
+                        <p>
+                            1 being the worst and 5 being the best.
+                        </p>
+
+                        <label for="1"><b>1</b></label>
+                        <input type="radio" name="rating" id="1" value="1">
+
+                        <label for="2"><b>2</b></label>
+                        <input type="radio" name="rating" id="2" value="2">
+
+                        <label for="3"><b>3</b></label>
+                        <input type="radio" name="rating" id="3" value="3">
+
+                        <label for="4"><b>4</b></label>
+                        <input type="radio" name="rating" id="4" value="4">
+
+                        <label for="5"><b>5</b></label>
+                        <input type="radio" name="rating" id="5" value="5">
+
+                    </div>
+
+                    <div id="q2">
+                        <h2>What is the reasoning for the response above?</h2>
+                        <p>Character Limit&#58; 400</p>
+                        <textarea id="reason" name="reason" rows="10" cols="40" maxlength="400" placeholder="I walked my dog and ate pizza!"
+                        ></textarea>
+
+                    </div>
+
+                    <div id="q3">
+                        <h2>How could you have improved your day?</h2>
+                        <p>Character Limit&#58; 200</p>
+                        <textarea id="improvement" name="improvement" rows="5" cols="40" maxlength="200" 
+                        placeholder="I could have also gone out with friends."></textarea>
+                        
+                    </div>
+
+                    <div id="q4">
+                        <h2>What was the highlight of your day?</h2>
+                        <p>Character Limit&#58; 100</p>
+                        <textarea id="highlight" name="highlight" rows="5" cols="40" maxlength="100" placeholder="Visiting the new bar."
+                        ></textarea>
+
+                    </div>
+
+                    <input type="submit" id="submit">
+
+                </form>
+
+            </main>
+
+        </div>
+
+    </body>
+
+</html>

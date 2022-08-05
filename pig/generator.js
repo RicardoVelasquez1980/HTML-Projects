@@ -25,7 +25,8 @@ const ideas = [
     "Profile Card",
     "Artcile Preview",
     "Sign-Up Form",
-    "Frontend Mentor Challenges"
+    "Frontend Mentor Challenges",
+    "Wikipedia Page"
 
 ];
 
