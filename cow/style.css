@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(66, 49, 34);
+
+}
+
+#container {
+    background-color: rgb(149, 133, 110);
+    width: 75%;
+    margin: 1em auto;
+    padding: 1em
+    
+}
+
+header h1{
+    font-size: 3em;
+
+}
+
+.underlined {
+    text-decoration: underline;
+
+}
+
+#secretButt {
+    /* background-color: white; */
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 0em;
+    right: 0em;
+    
+}
+
+#secret {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    visibility: hidden;
+    
+}
