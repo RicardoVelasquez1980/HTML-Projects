@@ -7,12 +7,13 @@ body {
     background-color: rgb(149, 133, 110);
     width: 75%;
     margin: 1em auto;
-    padding: 1em
+    padding: 0.75em 1em;
     
 }
 
-header h1{
+h1 {
     font-size: 3em;
+    margin: 0;
 
 }
 
@@ -21,8 +22,62 @@ header h1{
 
 }
 
+#navbar {
+    background-color: rgb(66, 49, 34);
+    text-align: center;
+    font-size: 1.05em;
+    position: sticky;
+    top: 0;
+    padding: 1em 0em;
+    margin: 1em 0em;
+
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+#navbar li {
+    display: inline;
+
+}
+
+#navbar a {
+    color: rgb(149, 133, 110);
+    margin: 0.5em;
+
+}
+
+#navbar a:hover{
+    color: rgba(255, 255, 255, 0.618);
+
+}
+
+h2 {
+    font-size: 1.75em;
+    
+}
+
+figure {
+    margin: 1em 0em;
+}
+
+#top iframe {
+    width: 50em;
+    height: 35em;
+
+}
+
+#guests img {
+    width: auto;
+    height: 35em;
+
+}
+
 #secretButt {
-    /* background-color: white; */
     width: 50px;
     height: 50px;
     position: fixed;
@@ -37,5 +92,72 @@ header h1{
     transform: translate(-50%, -50%);
     top: 50%;
     visibility: hidden;
+    width: auto;
+    height: 95%;
+    
+}
+
+@media screen and (max-width: 1230px) {
+    #navbar {
+        font-size: 0.8em;
+
+    }
+
+    #top iframe {
+        width: 40em;
+        height: 30em;
+
+    }
+
+    #guests img {
+        width: 40em;
+        height: auto;
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    #navbar {
+        font-size: 0.5em;
+
+    }
+
+    #top iframe {
+        width: 25em;
+        height: 20em;
+
+    }
+
+    #guests img {
+        width: 25em;
+        height: auto;
+
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    #navbar {
+        font-size: 0.25em;
+
+    }
+
+    #top iframe {
+        width: 10em;
+        height: 10em;
+
+    }
+
+    #guests img {
+        width: 10em;
+        height: auto;
+
+    }
+
+    #secret {
+        height: 75%;
+
+    }
     
 }
